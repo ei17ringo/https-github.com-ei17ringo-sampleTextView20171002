@@ -20,8 +20,16 @@ class ViewController: UIViewController {
         
         //TODO:プロパティ指定を使用してプログラムで以下の変更を行ってください
         //フォントをAmericanTypewriterに変更
-        //文字寄せを中央寄せに変更        
+        //文字寄せを中央寄せに変更
+        myTextView.textAlignment = .center
         
+        //TextViewを常に中央寄せ
+        myTextView.center = self.view.center
+        
+        //文字の量に合わせて変化していくように設定
+        myTextView.sizeToFit()
+        
+        print(myTextView.text)
     }
 
     //キーボードを閉じるボタンが押された時発動
